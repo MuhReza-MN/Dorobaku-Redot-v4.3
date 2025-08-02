@@ -1,0 +1,14 @@
+CenterContainer
+CanvasLayer
+VBoxContainer
+RichTextLabel
+HBoxContainer
+BoxContainer
+TouchScreenButton
+Sprite2D
+AnimationPlayer
+Panel
+Control
+Label
+CollisionPolygon2D
+TileMapLayer
