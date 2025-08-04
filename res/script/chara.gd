@@ -14,6 +14,9 @@ var is_moving = false
 var push_timer = 0.0
 var PUSH_HOLD = 0.02
 
+var withTilemap = false
+var detectBox = null
+
 func _ready() -> void:
 	emote.play("notif_off")
 
@@ -48,13 +51,16 @@ func move(delta):
 		#await get_tree().create_timer(0.01).timeout
 		cast.force_shapecast_update()
 		if cast.is_colliding():
-			var collider = cast.get_collider(0)
-			if collider is KotakHuruf :
-				push_timer = PUSH_HOLD
-				anim_state.travel("push")
-				if collider.move(input_movement):
-					move_and_slide()
-				
+			var hit_count = cast.get_collision_count()
+			for i in range(hit_count):
+				var collider = cast.get_collider(i)
+				if collider is KotakHuruf :
+					push_timer = PUSH_HOLD
+					anim_state.travel("push")
+					if collider.move(input_movement):
+						move_and_slide()
+				break
+						
 		if push_timer > 0.0:
 			anim_state.travel("push")
 		else:	

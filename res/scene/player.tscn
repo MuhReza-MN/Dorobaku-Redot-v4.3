@@ -265,10 +265,10 @@ tracks/0/path = NodePath("tex:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.2, 0.4, 0.6),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.0952381, 0.190476, 0.285714, 0.380952, 0.47619, 0.571429, 0.666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [60, 61, 62, 63]
+"values": [56, 57, 58, 59, 60, 61, 62, 63]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -472,10 +472,10 @@ tracks/0/path = NodePath("tex:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.190476, 0.380952, 0.571429),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.0952381, 0.190476, 0.285714, 0.380952, 0.47619, 0.571429, 0.666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [56, 57, 58, 59]
+"values": [84, 85, 86, 87, 88, 89, 90, 91]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -1006,7 +1006,7 @@ collision_mask = 272
 script = ExtResource("1_cvb05")
 
 [node name="tex" type="Sprite2D" parent="."]
-texture_filter = 6
+texture_filter = 3
 position = Vector2(0, -2)
 scale = Vector2(0.75, 0.75)
 texture = ExtResource("2_oqkj5")
@@ -1033,8 +1033,9 @@ parameters/walk/blend_position = Vector2(0, 0)
 position = Vector2(-7.5, 4.25)
 scale = Vector2(1, 0.85)
 shape = SubResource("RectangleShape2D_e8m4m")
-target_position = Vector2(0.2, 0)
+target_position = Vector2(0, 0)
 max_results = 1
+collision_mask = 16
 
 [node name="notif" type="Sprite2D" parent="."]
 position = Vector2(1, -28)

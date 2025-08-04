@@ -32,6 +32,7 @@ func popPause() :
 
 func popClear(time : float) :
 	anim.play("clear")
+	await anim.animation_finished
 	if time < b1: anim.play("b0")
 	elif time <= b2: anim.play("b1")
 	elif time <= b3: anim.play("b2")

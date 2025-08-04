@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://ddhbq3qf847pa"]
+[gd_scene load_steps=28 format=3 uid="uid://ddhbq3qf847pa"]
 
 [ext_resource type="Texture2D" uid="uid://ccadwpjs7wooj" path="res://res/asset/popscreen.png" id="1_8uoho"]
 [ext_resource type="Script" path="res://res/script/misc/pop_up.gd" id="2_ydfna"]
@@ -54,6 +54,7 @@ region = Rect2(10009, 75, 153, 153)
 
 [sub_resource type="Animation" id="Animation_yldwr"]
 resource_name = "b0"
+length = 0.0333
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -93,6 +94,7 @@ tracks/2/keys = {
 
 [sub_resource type="Animation" id="Animation_flito"]
 resource_name = "b1"
+length = 0.0333
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -132,6 +134,7 @@ tracks/2/keys = {
 
 [sub_resource type="Animation" id="Animation_dmv58"]
 resource_name = "b2"
+length = 0.0333
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -171,6 +174,7 @@ tracks/2/keys = {
 
 [sub_resource type="Animation" id="Animation_s4oq7"]
 resource_name = "b3"
+length = 0.0333
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -210,6 +214,7 @@ tracks/2/keys = {
 
 [sub_resource type="Animation" id="Animation_whvb2"]
 resource_name = "clear"
+length = 0.0333
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -241,6 +246,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_jyo0s"]
 resource_name = "pause"
+length = 0.0333
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -254,8 +260,24 @@ tracks/0/keys = {
 "values": [0]
 }
 
+[sub_resource type="Animation" id="Animation_d4i1f"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:hframes")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [4]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_46mcd"]
 _data = {
+"RESET": SubResource("Animation_d4i1f"),
 "b0": SubResource("Animation_yldwr"),
 "b1": SubResource("Animation_flito"),
 "b2": SubResource("Animation_dmv58"),
@@ -268,7 +290,7 @@ _data = {
 [node name="papan" type="Sprite2D"]
 texture = SubResource("AtlasTexture_ubn1t")
 hframes = 4
-frame = 3
+frame = 1
 script = ExtResource("2_ydfna")
 
 [node name="clear_con" type="BoxContainer" parent="."]
@@ -353,7 +375,6 @@ scale = Vector2(0.35, 0.35)
 texture = SubResource("AtlasTexture_rrws3")
 offset = Vector2(530, 120)
 hframes = 2
-frame = 1
 
 [node name="c1" type="Label" parent="pause_con/VBoxContainer/b1"]
 custom_minimum_size = Vector2(466, 0)
@@ -388,7 +409,6 @@ scale = Vector2(0.35, 0.35)
 texture = SubResource("AtlasTexture_rrws3")
 offset = Vector2(530, 120)
 hframes = 2
-frame = 1
 
 [node name="c2" type="Label" parent="pause_con/VBoxContainer/b2"]
 custom_minimum_size = Vector2(466, 0)
@@ -423,7 +443,6 @@ scale = Vector2(0.35, 0.35)
 texture = SubResource("AtlasTexture_rrws3")
 offset = Vector2(530, 120)
 hframes = 2
-frame = 1
 
 [node name="c3" type="Label" parent="pause_con/VBoxContainer/b3"]
 custom_minimum_size = Vector2(466, 0)

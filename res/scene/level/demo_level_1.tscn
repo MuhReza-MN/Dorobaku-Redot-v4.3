@@ -42,7 +42,6 @@ visible = false
 [node name="papan" parent="ui_layer" instance=ExtResource("3_0gd48")]
 position = Vector2(928, 479)
 scale = Vector2(0.9, 0.9)
-frame = 0
 
 [node name="btn_con" type="HBoxContainer" parent="ui_layer"]
 custom_minimum_size = Vector2(360, 180)
