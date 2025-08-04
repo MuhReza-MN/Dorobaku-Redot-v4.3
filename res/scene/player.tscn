@@ -1006,7 +1006,7 @@ collision_mask = 272
 script = ExtResource("1_cvb05")
 
 [node name="tex" type="Sprite2D" parent="."]
-texture_filter = 3
+texture_filter = 6
 position = Vector2(0, -2)
 scale = Vector2(0.75, 0.75)
 texture = ExtResource("2_oqkj5")
