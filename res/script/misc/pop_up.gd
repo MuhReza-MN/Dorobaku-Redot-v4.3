@@ -14,9 +14,9 @@ var taskStr = "Time > "
 @onready var resumeBtn: TouchScreenButton = $pause_con/VBoxContainer/btns_con/Panel4/resume
 
 signal _exit
-var b1 = float(b1_task)  
-var b2 = float(b2_task)  
-var b3 = float(b3_task)  
+var b1 = int(b1_task)  
+var b2 = int(b2_task)  
+var b3 = int(b3_task)  
 
 func _ready() -> void:
 	c1.text = taskStr + b1_task
@@ -30,13 +30,15 @@ func popPause() :
 	restart.visible = false
 	resumeBtn.visible = true
 
-func popClear(time : float) :
+func popClear(time : int) :
 	anim.play("clear")
 	await anim.animation_finished
+	
 	if time < b1: anim.play("b0")
 	elif time <= b2: anim.play("b1")
 	elif time <= b3: anim.play("b2")
 	else: anim.play("b3")
+	
 	helpBtn.visible = false
 	restart.visible = false
 	resumeBtn.visible = true

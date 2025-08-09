@@ -3,17 +3,19 @@ class_name DemoLevel4 extends Node
 var game_end : bool = false
 var info : bool = false
 var isCleared : bool = false
+var isFailed: bool = false
 
 @onready var label: Label = $ui_layer/Panel/Label
 @onready var timer: Timer = $Timer
 @onready var musicLvl = preload("res://res/asset/sound/bgm3.mp3")
 @onready var loading: CanvasLayer = $ui_layer/loading
+@onready var timerDis: TimeDisplay = $ui_layer/timeDisplay
 
 var h1 = "s"
 var h2 = "a"
 var h3 = "u"
 var h4 = "o"
-var maxTime = 251.0
+@export var maxTime : float
 var resetNum = GlobalVar.MaxReset
 var timeLeft
 var can_open = false
@@ -30,11 +32,10 @@ func _ready() -> void:
 	loading.visible = true
 	
 	_obs_default()
-	timer.wait_time = maxTime
 	for i in $kotak_grup.get_children() :
 		i.add_to_group(i.nama_kotak)
 	box_setup()
-	timer.start()
+	timerDis.start_timer(maxTime)
 				
 func box_setup() -> void:
 	get_tree().get_nodes_in_group("s")[0].set_block(h1)
@@ -49,19 +50,14 @@ func _process(delta: float) -> void:
 		else : _btn_pause()
 	elif Input.is_action_just_pressed("reset") : _on_touch_screen_button_pressed()
 	
-	if !timer_off :
-		label.text = str(int(timer.time_left))
 	if game_end == false :
 		if target == 0 :
 			game_end = true
 			if can_open :
 				_openNstop()
-		elif timer.time_left == 0.0 :
+		elif timerDis.get_timeLeft() < 1 :
 			game_end = true
 			selesai()
-		#elif Input.is_action_pressed("aksi"):
-		#	var door = get_node("door")  # Adjust path
-		#	door.open_door()
 		
 func _on_touch_screen_button_pressed() -> void:
 	get_node("ui_layer/btn_con/reset_btn").btn_press(resetNum)
@@ -169,8 +165,7 @@ func _openNstop() :
 	door.open_door()
 	is_open = true
 	if !timer_off :
-		timer.paused = true
-		timeLeft = int(timer.time_left)
-		timer.stop()
-		label.text = str(timeLeft)
+		timerDis.pause_timer()
+		timeLeft = timerDis.get_timeLeft()
+		timerDis.stop_timer()
 		timer_off = true

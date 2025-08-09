@@ -425,6 +425,7 @@ motion_mode = 1
 script = ExtResource("1_8di7h")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 5
 position = Vector2(29, 34)
 scale = Vector2(0.9, 0.9)
 texture = SubResource("AtlasTexture_a2i2c")

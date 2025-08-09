@@ -72,7 +72,7 @@ theme_override_styles/panel = SubResource("StyleBoxEmpty_xpkjy")
 layout_mode = 2
 theme_override_fonts/font = ExtResource("3_5v11u")
 theme_override_font_sizes/font_size = 68
-text = "DEMO V.3"
+text = " "
 horizontal_alignment = 1
 
 [node name="Panel" type="Panel" parent="Panel/VBoxContainer"]

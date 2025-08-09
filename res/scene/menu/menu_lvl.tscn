@@ -98,7 +98,7 @@ region = Rect2(1200, 115, 367, 449)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dr3f3"]
 atlas = SubResource("CompressedTexture2D_dibe3")
-region = Rect2(648, 115, 367, 449)
+region = Rect2(96, 116, 366, 445)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_byxwj"]
 atlas = ExtResource("7_4eymy")
@@ -326,7 +326,6 @@ texture_normal = SubResource("AtlasTexture_dr3f3")
 texture_pressed = SubResource("AtlasTexture_sq3pv")
 
 [node name="Sprite2D" type="Sprite2D" parent="Panel/VBoxContainer/levelCon1/con5/lvl5"]
-visible = false
 position = Vector2(187, 232)
 scale = Vector2(4, 4)
 texture = SubResource("AtlasTexture_isbj3")
@@ -348,7 +347,6 @@ layout_mode = 2
 size_flags_horizontal = 3
 
 [node name="lvl6" type="TouchScreenButton" parent="Panel/VBoxContainer/levelCon2/con6" groups=["level_button"]]
-visible = false
 position = Vector2(0, -18)
 scale = Vector2(0.7, 0.7)
 texture_normal = SubResource("AtlasTexture_vdlc4")
@@ -366,7 +364,6 @@ layout_mode = 2
 size_flags_horizontal = 3
 
 [node name="lvl7" type="TouchScreenButton" parent="Panel/VBoxContainer/levelCon2/con7" groups=["level_button"]]
-visible = false
 position = Vector2(0, -18)
 scale = Vector2(0.7, 0.7)
 texture_normal = SubResource("AtlasTexture_5r1gj")
@@ -384,7 +381,6 @@ layout_mode = 2
 size_flags_horizontal = 3
 
 [node name="lvl8" type="TouchScreenButton" parent="Panel/VBoxContainer/levelCon2/con8" groups=["level_button"]]
-visible = false
 position = Vector2(0, -18)
 scale = Vector2(0.7, 0.7)
 texture_normal = SubResource("AtlasTexture_8chde")
@@ -402,7 +398,6 @@ layout_mode = 2
 size_flags_horizontal = 3
 
 [node name="lvl9" type="TouchScreenButton" parent="Panel/VBoxContainer/levelCon2/con9" groups=["level_button"]]
-visible = false
 position = Vector2(0, -18)
 scale = Vector2(0.7, 0.7)
 texture_normal = SubResource("AtlasTexture_8chde")
@@ -420,7 +415,6 @@ layout_mode = 2
 size_flags_horizontal = 3
 
 [node name="lvl5" type="TouchScreenButton" parent="Panel/VBoxContainer/levelCon2/con10" groups=["level_button"]]
-visible = false
 position = Vector2(0, -18)
 scale = Vector2(0.7, 0.7)
 texture_normal = SubResource("AtlasTexture_8chde")

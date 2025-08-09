@@ -66,6 +66,42 @@ tracks/0/keys = {
 "update": 1,
 "values": [4]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("pause_con/VBoxContainer/b1/Panel/star:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("pause_con/VBoxContainer/b2/Panel/star:frame")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("pause_con/VBoxContainer/b3/Panel/star:frame")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
 
 [sub_resource type="Animation" id="Animation_yldwr"]
 resource_name = "b0"
@@ -229,7 +265,7 @@ tracks/2/keys = {
 
 [sub_resource type="Animation" id="Animation_whvb2"]
 resource_name = "clear"
-length = 0.0333
+length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -245,7 +281,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_jxqm1"]
 resource_name = "failed"
-length = 0.0333
+length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -261,7 +297,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_jyo0s"]
 resource_name = "pause"
-length = 0.0333
+length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -290,7 +326,6 @@ _data = {
 [node name="papan" type="Sprite2D"]
 texture = SubResource("AtlasTexture_ubn1t")
 hframes = 4
-frame = 1
 script = ExtResource("2_ydfna")
 
 [node name="clear_con" type="BoxContainer" parent="."]
@@ -375,6 +410,7 @@ scale = Vector2(0.35, 0.35)
 texture = SubResource("AtlasTexture_rrws3")
 offset = Vector2(530, 120)
 hframes = 2
+frame = 1
 
 [node name="c1" type="Label" parent="pause_con/VBoxContainer/b1"]
 custom_minimum_size = Vector2(466, 0)
@@ -409,6 +445,7 @@ scale = Vector2(0.35, 0.35)
 texture = SubResource("AtlasTexture_rrws3")
 offset = Vector2(530, 120)
 hframes = 2
+frame = 1
 
 [node name="c2" type="Label" parent="pause_con/VBoxContainer/b2"]
 custom_minimum_size = Vector2(466, 0)
@@ -443,6 +480,7 @@ scale = Vector2(0.35, 0.35)
 texture = SubResource("AtlasTexture_rrws3")
 offset = Vector2(530, 120)
 hframes = 2
+frame = 1
 
 [node name="c3" type="Label" parent="pause_con/VBoxContainer/b3"]
 custom_minimum_size = Vector2(466, 0)

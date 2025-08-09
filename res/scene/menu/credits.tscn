@@ -376,7 +376,7 @@ size_flags_horizontal = 3
 theme_override_constants/outline_size = 15
 theme_override_fonts/font = ExtResource("2_xknah")
 theme_override_font_sizes/font_size = 45
-text = "Redot v4.3 and it's community"
+text = "Redot v4.3.1 and it's community"
 
 [node name="Label6" type="Label" parent="Panel/VBoxContainer/HBoxContainer/VBoxContainer/VBoxContainer"]
 layout_mode = 2

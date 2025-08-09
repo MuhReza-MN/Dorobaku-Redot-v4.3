@@ -4,12 +4,14 @@ var game_end : bool = false
 var info : bool = false
 var active_count: int = 0
 var isCleared : bool = false
+var isFailed: bool = false
 
 @onready var label: Label = $ui_layer/Panel/Label
 @onready var timer: Timer = $Timer
 @onready var anim: AnimationPlayer = $AnimationPlayer
 @onready var musicLvl = preload("res://res/asset/sound/bgm3.mp3")
 @onready var loading: CanvasLayer = $ui_layer/loading
+@onready var timerDis: TimeDisplay = $ui_layer/timeDisplay
 
 var h1 = "a"
 var h2 = "t"
@@ -17,7 +19,7 @@ var h3 = "l"
 var h4 = "e"
 var h5 = "i"
 var box = "kosong"
-var maxTime = 301.0
+@export var maxTime : float
 var resetNum = GlobalVar.MaxReset
 var timeLeft
 
@@ -35,11 +37,11 @@ func _ready() -> void:
 		plate.deactivated.connect(self._exit_cek)
 	anim.play("jembatans_sets")
 	_obs_default()
-	timer.wait_time = maxTime
+	
 	for i in $kotak_grup.get_children() :
 		i.add_to_group(i.nama_kotak)
 	box_setup()
-	timer.start()
+	timerDis.start_timer(maxTime)
 				
 func box_setup() -> void:
 	get_tree().get_nodes_in_group("a")[0].set_block(h1)
@@ -56,17 +58,17 @@ func _process(delta: float) -> void:
 	elif Input.is_action_just_pressed("reset") : _on_touch_screen_button_pressed()
 	
 	if game_end == false :
-		label.text = str(int(timer.time_left))
 		if active_count == target :
 			var door = get_node("door")  # Adjust path
 			door.open_door()
-			timer.paused = true
-			timeLeft = int(timer.time_left)
-			timer.stop()
-			label.text = str(timeLeft)
+			timerDis.pause_timer()
+			timeLeft = timerDis.get_timeLeft()
+			timerDis.stop_timer()
 			game_end = true
-		elif timer.time_left == 0.0 :
+		elif timerDis.get_timeLeft() < 1 :
 			game_end = true
+			isFailed = true
+			timerDis.pause_timer()
 			selesai()
 
 		
@@ -102,7 +104,7 @@ func selesai():
 	$ui_layer/btn_con.visible = false
 	$ui_layer/papan.visible = true
 	if isCleared : get_node("ui_layer/papan").popClear(timeLeft)
-	else : get_node("ui_layer/papan").popFailed()
+	elif isFailed : get_node("ui_layer/papan").popFailed()
 	$Player.visible = false
 
 func _btn_pause() -> void:
