@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=3 uid="uid://dmx535jcsa8q6"]
+[gd_scene load_steps=40 format=3 uid="uid://dmx535jcsa8q6"]
 
 [ext_resource type="Script" path="res://res/script/menu/lvl_select.gd" id="1_cvo1e"]
 [ext_resource type="Texture2D" uid="uid://bn26hefyefqwr" path="res://res/asset/bg.png" id="1_qa6kw"]
@@ -85,7 +85,7 @@ region = Rect2(0, 0, 640, 128)
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_dibe3"]
 load_path = "res://.godot/imported/lvlBg.png-7cd9a9f141e137adce70860eea7ab3b1.ctex"
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_8chde"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_v6eoi"]
 atlas = SubResource("CompressedTexture2D_dibe3")
 region = Rect2(96, 116, 366, 445)
 
@@ -96,9 +96,25 @@ load_path = "res://.godot/imported/lvlBg.png-7cd9a9f141e137adce70860eea7ab3b1.ct
 atlas = SubResource("CompressedTexture2D_tde1w")
 region = Rect2(1200, 115, 367, 449)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_dr3f3"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_fyg5a"]
 atlas = SubResource("CompressedTexture2D_dibe3")
 region = Rect2(96, 116, 366, 445)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dr3f3"]
+atlas = SubResource("CompressedTexture2D_dibe3")
+region = Rect2(648, 115, 367, 449)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6acs3"]
+atlas = SubResource("CompressedTexture2D_tuq6b")
+region = Rect2(648, 115, 367, 449)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7lqaq"]
+atlas = SubResource("CompressedTexture2D_tuq6b")
+region = Rect2(648, 115, 367, 449)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8chde"]
+atlas = SubResource("CompressedTexture2D_dibe3")
+region = Rect2(648, 115, 367, 449)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_byxwj"]
 atlas = ExtResource("7_4eymy")
@@ -288,7 +304,7 @@ size_flags_horizontal = 3
 [node name="lvl3" type="TouchScreenButton" parent="Panel/VBoxContainer/levelCon1/con3" groups=["level_button"]]
 position = Vector2(0, -18)
 scale = Vector2(0.7, 0.7)
-texture_normal = SubResource("AtlasTexture_8chde")
+texture_normal = SubResource("AtlasTexture_v6eoi")
 texture_pressed = SubResource("AtlasTexture_sq3pv")
 
 [node name="Sprite2D" type="Sprite2D" parent="Panel/VBoxContainer/levelCon1/con3/lvl3"]
@@ -305,7 +321,7 @@ size_flags_horizontal = 3
 [node name="lvl4" type="TouchScreenButton" parent="Panel/VBoxContainer/levelCon1/con4" groups=["level_button"]]
 position = Vector2(0, -18)
 scale = Vector2(0.7, 0.7)
-texture_normal = SubResource("AtlasTexture_8chde")
+texture_normal = SubResource("AtlasTexture_fyg5a")
 texture_pressed = SubResource("AtlasTexture_sq3pv")
 
 [node name="Sprite2D" type="Sprite2D" parent="Panel/VBoxContainer/levelCon1/con4/lvl4"]
@@ -326,6 +342,7 @@ texture_normal = SubResource("AtlasTexture_dr3f3")
 texture_pressed = SubResource("AtlasTexture_sq3pv")
 
 [node name="Sprite2D" type="Sprite2D" parent="Panel/VBoxContainer/levelCon1/con5/lvl5"]
+visible = false
 position = Vector2(187, 232)
 scale = Vector2(4, 4)
 texture = SubResource("AtlasTexture_isbj3")
@@ -349,10 +366,11 @@ size_flags_horizontal = 3
 [node name="lvl6" type="TouchScreenButton" parent="Panel/VBoxContainer/levelCon2/con6" groups=["level_button"]]
 position = Vector2(0, -18)
 scale = Vector2(0.7, 0.7)
-texture_normal = SubResource("AtlasTexture_vdlc4")
+texture_normal = SubResource("AtlasTexture_6acs3")
 texture_pressed = SubResource("AtlasTexture_hossb")
 
 [node name="Sprite2D" type="Sprite2D" parent="Panel/VBoxContainer/levelCon2/con6/lvl6"]
+visible = false
 position = Vector2(172, 228)
 scale = Vector2(4, 4)
 texture = SubResource("AtlasTexture_oihb3")
@@ -366,10 +384,11 @@ size_flags_horizontal = 3
 [node name="lvl7" type="TouchScreenButton" parent="Panel/VBoxContainer/levelCon2/con7" groups=["level_button"]]
 position = Vector2(0, -18)
 scale = Vector2(0.7, 0.7)
-texture_normal = SubResource("AtlasTexture_5r1gj")
+texture_normal = SubResource("AtlasTexture_7lqaq")
 texture_pressed = SubResource("AtlasTexture_nyna8")
 
 [node name="Sprite2D" type="Sprite2D" parent="Panel/VBoxContainer/levelCon2/con7/lvl7"]
+visible = false
 position = Vector2(187, 232)
 scale = Vector2(4, 4)
 texture = SubResource("AtlasTexture_isbj3")
@@ -387,6 +406,7 @@ texture_normal = SubResource("AtlasTexture_8chde")
 texture_pressed = SubResource("AtlasTexture_sq3pv")
 
 [node name="Sprite2D" type="Sprite2D" parent="Panel/VBoxContainer/levelCon2/con8/lvl8"]
+visible = false
 position = Vector2(187, 232)
 scale = Vector2(4, 4)
 texture = SubResource("AtlasTexture_isbj3")
@@ -404,6 +424,7 @@ texture_normal = SubResource("AtlasTexture_8chde")
 texture_pressed = SubResource("AtlasTexture_sq3pv")
 
 [node name="Sprite2D" type="Sprite2D" parent="Panel/VBoxContainer/levelCon2/con9/lvl9"]
+visible = false
 position = Vector2(187, 232)
 scale = Vector2(4, 4)
 texture = SubResource("AtlasTexture_isbj3")
@@ -421,6 +442,7 @@ texture_normal = SubResource("AtlasTexture_8chde")
 texture_pressed = SubResource("AtlasTexture_sq3pv")
 
 [node name="Sprite2D" type="Sprite2D" parent="Panel/VBoxContainer/levelCon2/con10/lvl5"]
+visible = false
 position = Vector2(94.8594, 244.857)
 scale = Vector2(3.5, 3.5)
 texture = SubResource("AtlasTexture_isbj3")
@@ -428,6 +450,7 @@ hframes = 10
 frame = 1
 
 [node name="Sprite2D2" type="Sprite2D" parent="Panel/VBoxContainer/levelCon2/con10/lvl5"]
+visible = false
 position = Vector2(237.146, 244.857)
 scale = Vector2(3.5, 3.5)
 texture = SubResource("AtlasTexture_isbj3")

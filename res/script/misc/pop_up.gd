@@ -2,9 +2,9 @@ class_name PopMenu extends Node
 
 @onready var anim: AnimationPlayer = $AnimationPlayer
 
-@export var b1_task : String = "100"
-@export var b2_task : String = "120"
-@export var b3_task : String = "150"
+@export var b1_task : String
+@export var b2_task : String 
+@export var b3_task : String 
 var taskStr = "Time > "
 @onready var c1: Label = $pause_con/VBoxContainer/b1/c1
 @onready var c2: Label = $pause_con/VBoxContainer/b2/c2

@@ -32,7 +32,7 @@ size = Vector2(64, 64)
 [node name="DemoLevel" type="Node2D" groups=["level"]]
 position = Vector2(0, -1)
 script = ExtResource("1_fp4d6")
-maxTime = 201.0
+maxTime = 161.0
 
 [node name="ui_layer" type="CanvasLayer" parent="."]
 
@@ -45,6 +45,9 @@ visible = false
 visible = false
 position = Vector2(928, 479)
 scale = Vector2(0.9, 0.9)
+b1_task = "70 "
+b2_task = "80 "
+b3_task = "100 "
 
 [node name="btn_con" type="HBoxContainer" parent="ui_layer"]
 custom_minimum_size = Vector2(360, 180)
