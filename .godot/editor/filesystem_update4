@@ -1,11 +1,3 @@
-res://res/scene/menu/menu_lvl.tscn
+res://res/asset/shaders/filling.gdshader
 res://res/asset/levelTilemap.tres
 res://res/asset/shaders/stars.gdshader
-res://res/scene/level/demo_level_4.tscn
-res://res/scene/level/demo_level_1.tscn
-res://res/scene/level/demo_level_2.tscn
-res://res/scene/level/demo_level_3.tscn
-res://res/scene/misc/pop_up.tscn
-res://res/scene/misc/timeCounter.tscn
-res://res/scene/menu/menu_home.tscn
-res://res/script/misc/pop_up.gd

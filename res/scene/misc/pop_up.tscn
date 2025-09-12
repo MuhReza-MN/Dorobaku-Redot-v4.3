@@ -409,7 +409,7 @@ theme_override_styles/panel = SubResource("StyleBoxEmpty_edeg4")
 scale = Vector2(0.35, 0.35)
 texture = SubResource("AtlasTexture_rrws3")
 offset = Vector2(530, 120)
-hframes = 2
+hframes = 3
 frame = 1
 
 [node name="c1" type="Label" parent="pause_con/VBoxContainer/b1"]
@@ -444,7 +444,7 @@ theme_override_styles/panel = SubResource("StyleBoxEmpty_edeg4")
 scale = Vector2(0.35, 0.35)
 texture = SubResource("AtlasTexture_rrws3")
 offset = Vector2(530, 120)
-hframes = 2
+hframes = 3
 frame = 1
 
 [node name="c2" type="Label" parent="pause_con/VBoxContainer/b2"]
@@ -479,7 +479,7 @@ theme_override_styles/panel = SubResource("StyleBoxEmpty_edeg4")
 scale = Vector2(0.35, 0.35)
 texture = SubResource("AtlasTexture_rrws3")
 offset = Vector2(530, 120)
-hframes = 2
+hframes = 3
 frame = 1
 
 [node name="c3" type="Label" parent="pause_con/VBoxContainer/b3"]

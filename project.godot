@@ -21,6 +21,8 @@ GameStateService="*res://addons/game_state_saver/game_state_service.gd"
 AudioPlayer="*res://res/global/audio_player.gd"
 PlayerManager="*res://res/global/player_manager.gd"
 GlobalVar="*res://res/global/global.gd"
+SaveManager="*res://res/global/save_manager.gd"
+DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
 
 [display]
 
@@ -34,7 +36,7 @@ window/stretch/aspect="keep_width"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/modular_sprite_animation_factory/plugin.cfg")
+enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg", "res://addons/modular_sprite_animation_factory/plugin.cfg")
 
 [input]
 
