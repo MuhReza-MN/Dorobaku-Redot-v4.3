@@ -1,3 +1,8 @@
+res://res/scene/menu/menu_lvl.tscn
 res://res/asset/shaders/filling.gdshader
 res://res/asset/levelTilemap.tres
 res://res/asset/shaders/stars.gdshader
+res://res/scene/menu/menu_home.tscn
+res://res/scene/level/demo_level_1.tscn
+res://res/scene/spawn/buku.tscn
+res://res/scene/player.tscn

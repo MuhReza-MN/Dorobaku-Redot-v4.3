@@ -1,5 +1,5 @@
 e22c9c70a03ae172662e56cbc433647f
-::res://::1756707828
+::res://::1761631973
 export_presets.cfg::TextFile::-1::1754744140::0::1::::<><>::
 icon.png::CompressedTexture2D::2229428699681889832::1730786492::1736363870::1::::<><>::
 icon.svg::CompressedTexture2D::8042384243058808630::1738733633::1744696208::1::::<><>::
@@ -89,7 +89,7 @@ msaf_dock.tscn::PackedScene::226785231816329226::1712258350::0::1::::<><>::res:/
 ::res://res/::1739239425
 BULKYPIX.TTF::FontFile/Database::1596798893089475141::988076862::1733150661::1::::<><>::
 joystix monospace.otf::FontFile/Database::6721805200860939012::1539404888::1736360003::1::::<><>::
-::res://res/asset/::1756692474
+::res://res/asset/::1756707855
 actor_man.png::CompressedTexture2D::3573736943391859387::1730234918::1730700462::1::::<><>::
 all_tiles.png::CompressedTexture2D::567241828686584092::1736136636::1736140145::1::::<><>::
 all_tiles_new.png::CompressedTexture2D::7450102208255618988::1736139911::1736140145::1::::<><>::
@@ -110,7 +110,7 @@ font_angka.png::CompressedTexture2D::2508308779205907310::1745892285::1745894512
 hole.png::CompressedTexture2D/Database::3186211138570575345::1736351625::1736351643::1::::<><>::
 interractable.png::CompressedTexture2D::2189476801756624038::1741662204::1741662307::1::::<><>::
 item_plank.png::CompressedTexture2D::5566956746661644525::1740028875::1740406874::1::::<><>::
-levelTilemap.tres::TileSet::513774687112428234::1756692474::0::1::::<><>::uid://dhyac7m038xqi::::res://res/asset/assetMap2.png<>uid://biw18tloo8bqn::::res://res/asset/Set 4.5.png<>uid://bshns7tmpr12s::::res://res/asset/assetMap.png
+levelTilemap.tres::TileSet::513774687112428234::1756707855::0::1::::<><>::uid://dhyac7m038xqi::::res://res/asset/assetMap2.png<>uid://biw18tloo8bqn::::res://res/asset/Set 4.5.png<>uid://bshns7tmpr12s::::res://res/asset/assetMap.png
 logobaru.png::CompressedTexture2D::3265984323246124585::1733229927::1733374866::1::::<><>::
 lvlBg.png::CompressedTexture2D::8623914755970760414::1756452511::1756454632::1::::<><>::
 newbtn.png::CompressedTexture2D/Database::537244310887767107::1734933136::1736349477::1::::<><>::
@@ -154,10 +154,10 @@ s0_frame2.png::CompressedTexture2D::635754713304164952::1749022798::1749022948::
 s0_frame3.png::CompressedTexture2D::5863784205780231350::1749031336::1749031374::1::::<><>::
 setingg..png::CompressedTexture2D::7989538438692854296::1716173341::1733112524::1::::<><>::
 start.png::CompressedTexture2D::8261732285053290912::1716173166::1733112524::1::::<><>::
-::res://res/asset/shaders/::1756694250
-filling.gdshader::Shader::-1::1756694250::0::1::::<><>::
+::res://res/asset/shaders/::1756707856
+filling.gdshader::Shader::-1::1756707856::0::1::::<><>::
 outline.gdshader::Shader::-1::1756112031::0::1::::<><>::
-stars.gdshader::Shader::-1::1756694250::0::1::::<><>::
+stars.gdshader::Shader::-1::1756707856::0::1::::<><>::
 ::res://res/asset/sound/::1749046159
 bgm1.mp3::AudioStreamMP3::2082291538730638418::1713766792::1733112524::1::::<><>::
 bgm2.mp3::AudioStreamMP3::8123789197841689009::1717239274::1733112524::1::::<><>::
